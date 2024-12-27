@@ -1,0 +1,401 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .mainDiv {
+        background-image: url('../assets/CellnfraBg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        width: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .heding {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .leftPart {
+        position: relative;
+        top: 60px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .button {
+        background-color: #aaff01;
+        border: none;
+        border-radius: 10px;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+        .button:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            transform: translateY(-3px); /* Slight popup effect */
+        }
+
+    .empoweringBusinesses {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+        .empoweringBusinesses img {
+            width: 30vw;
+        }
+
+    .mainDivServices {
+        margin-top: 20px;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .setsUsApart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .leftSetsUsApart {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightSetsUsApart {
+        width: 50%;
+    }
+
+        .rightSetsUsApart h4 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+    .autoIncrementNumber{
+       
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    .counter-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        text-align: center;
+    }
+
+        .counter-container span{
+
+        font-size: 1.2rem;
+        }
+    .counter {
+        font-size: 4rem;
+        font-weight:500;
+        margin-top: 10px;
+    }
+
+    i {
+        font-size: 60px;
+    }
+
+  
+
+    .trustedByClients-div {
+        margin: 30px 0px;
+    }
+
+        .trustedByClients-div h2 {
+            font-size: 1.9rem;
+            text-align: center;
+            font-weight: bold;
+        }
+    .custom-css {
+        box-shadow: 0px 10px 31px -3px rgba(0,0,0,0.3);
+        border-radius: 30px;
+        border-bottom: 1px solid #000000;
+        padding: 20px;
+        margin: 30px;
+    }
+
+    .mainFooter{
+        background-color: #e8feae;
+        margin-top:50px;
+        display: flex;
+        color: #1b2e35;
+        justify-content: space-between;
+        border-radius:5px;
+        padding:10px;
+    }
+
+    .mainFooter img{
+        width:10vw;
+    }
+    @@media screen and (max-width:767px) {
+        .leftPart {
+            width: 100%;
+        }
+
+        .empoweringBusinesses {
+            flex-wrap: wrap;
+        }
+
+            .empoweringBusinesses img {
+                width: 70vw;
+            }
+
+        .setsUsApart {
+            flex-direction: column;
+        }
+
+        .counter{
+            font-size: 2rem;
+        }
+
+        .counter-container span {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+
+<div class="mainDiv">
+    <div class="heding">
+        <div class="leftPart">
+            <div class="mainHeading">
+                <h1>
+                    Revitalizing Electronics for a Sustainable Future
+                </h1>
+            </div>
+            <div class="subHeading">
+                <p>
+                    Cellnfra specializes in expert repair, testing, maintenance, and distribution of telecom, IT, CPE, and industrial electronics. We partner with telecom operators, ISPs, and industries to extend equipment lifespan, reduce downtime, and ensure optimal performance with sustainable, high-quality aftermarket services tailored to meet the evolving needs of our clients.
+                </p>
+            </div>
+            <div>
+                <button class="button">Get a Free Consultation</button>
+            </div>
+            <div>
+                <img style="width:20vw;height:auto" src="~/assets/WorldConnection.png" />
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <h1 style="text-align:center;">Empowering Businesses with Expert Aftermarket Solutions</h1>
+    <div class="empoweringBusinesses">
+        <div>
+            <p style="font-size:1.2rem;">
+                Cellnfra is into aftermarket services and solutions that deliver value to enable our customers to achieve their financial and stainability objectives. Cellnfra was formed with a group of professionals having more than 120+ man-years of combined deep domain experience and knowledge in the fields of Post sales services, supply chain management, engineering, technology, services, repair, and refurbishment serving a wide range of electronic product markets.
+                We offer industry-leading methods and processes to help our customers work faster, leaner, and more efficiently. Our customers present us with a problem and we help solve it quickly. One of our core competencies is understanding customer requirements.
+            </p>
+        </div>
+        <div>
+            <img src="~/assets/istockphoto.jpg" />
+        </div>
+    </div>
+</div>
+
+<div class="mainDivServices">
+    <h1 style="text-align:center;">Discover Our Best Value Services</h1>
+    <div class="services">
+        <div class="card" style="width: 20rem;">
+            <img src="~/assets/er.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">ELECTRONICS REPAIRS</p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img src="~/assets/erefab.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">ELECTRONICS REFURBISH</p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img src="~/assets/logistic.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">REVERSE LOGISTICS & SUPPLY CHAIN</p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img src="~/assets/assem.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">ASSEMBLY & TEST</p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img src="~/assets/eps.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">ELECTRONICS PARTS SALES</p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img src="~/assets/bes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">BESPOKE Solutions</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="setsUsApart">
+    <div class="leftSetsUsApart">
+        <img src="./assets/apart.png" />
+    </div>
+    <div class="rightSetsUsApart">
+
+        <h4>What sets us apart?</h4>
+        <p>Our extensive team of talented and experienced professionals, which includes engineers dedicated to continuous improvement and innovation in repair, remanufacturing, refurbishment, reclamation, and reuse technologies. We have deep domain experience in product categories ranging from Telcom, IT networking, power supplies Industrial electronics and data center equipment to CPEs and IoT devices. Other services include optimized supply chain planning and logistics, trade-in and remarketing, and sales.</p>
+        <button class="button">Read More</button>
+    </div>
+</div>
+
+<div class="autoIncrementNumber">
+    <div class="counter-container">
+        <i class="fab fa-twitter fax-3x"></i>
+        <div class="counter" data-target="52000"></div>
+        <span>Units Processed</span>
+    </div>
+
+    <div class="counter-container">
+        <i class="fab fa-youtube fax-3x"></i>
+        <div class="counter" data-target="3000"></div>
+        <span>Types of Products</span>
+    </div>
+
+    <div class="counter-container">
+        <i class="fab fa-facebook fax-3x"></i>
+        <div class="counter" data-target="500"></div>
+        <span>Customers</span>
+    </div>
+
+    <div class="counter-container">
+        <i class="fab fa-facebook fax-3x"></i>
+        <div class="counter" data-target="200"><span>+</span></div>
+        <span>Team</span>
+    </div>
+</div>
+
+<div class="trustedByClients-div">
+    <h2>
+        Trusted By 100+ Clients
+    </h2>
+    <div id="carouselExampleAutoplaying"
+         class="carousel slide custom-css"
+         data-bs-ride="carousel"
+         data-bs-interval="1000"
+         data-bs-pause="false">
+        <div class="carousel-inner">
+            <!-- First Carousel Item -->
+            <div class="carousel-item active" data-bs-interval="2000">
+                <div class="d-flex justify-content-around">
+                    <img src="https://img.freepik.com/free-vector/luxury-logo-gradient-design-illustration_483537-1038.jpg?uid=R174644542&ga=GA1.1.843892399.1731923862&semt=ais_hybrid"
+                         class="d-block w-25"
+                         alt="..." />
+                    <img src="https://img.freepik.com/free-vector/royal-logo_1071-200.jpg?uid=R174644542&ga=GA1.1.843892399.1731923862&semt=ais_hybrid"
+                         class="d-block w-25"
+                         alt="..." />
+                    <img src="https://img.freepik.com/free-vector/logo-with-shape-3d_1043-51.jpg?uid=R174644542&ga=GA1.1.843892399.1731923862&semt=ais_hybrid"
+                         class="d-block w-25"
+                         alt="..." />
+                </div>
+            </div>
+
+            <!-- Second Carousel Item -->
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="d-flex justify-content-around">
+                    <img src="https://img.freepik.com/free-vector/connection-vector-logo-template_460848-8078.jpg?uid=R174644542&ga=GA1.1.843892399.1731923862&semt=ais_hybrid"
+                         class="d-block w-25"
+                         alt="..." />
+                    <img src="https://img.freepik.com/free-vector/abstract-thanos-personal-trainer-logo_23-2149572489.jpg?uid=R174644542&ga=GA1.1.843892399.1731923862&semt=ais_hybrid"
+                         class="d-block w-25"
+                         alt="..." />
+                    <img src="https://img.freepik.com/free-vector/abstract-logo-template-gradient-style_52683-13888.jpg?uid=R174644542&ga=GA1.1.843892399.1731923862&semt=ais_hybrid"
+                         class="d-block w-25"
+                         alt="..." />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mainFooter">
+    <div>
+        <img src="/assets/cellnfraLogo.png" />
+    </div>
+    <div>
+        <h3>Markets</h3>
+        <h6> Telecom</h6>
+        <h6> Optical Networks</h6>
+        <h6> Industrial Electronics</h6>
+        <h6> CPE Data Networks</h6>
+    </div>
+    <div>
+        <h4>About Company</h4>
+        <h6>
+            About Company                                               
+        </h6>
+        <h6> Contact Us</h6>
+        <h6> Privacy policy</h6>
+        <h6>  Mission & Vision</h6>
+        <h6>  Terms & Conditions</h6>
+    </div>
+    <div>
+        <h4>Life Cycles Services</h4>
+        <h6>
+            Electronics Repairs                                                           
+        </h6>
+        <h6>  Assembly & Retrofitting</h6>
+        <h6> Refurbished Electronics</h6>
+        <h6> Reverse logistics and supply chain</h6>
+        <h6>Bespoke Solutions</h6>
+        
+    </div>
+</div>
+
+<script type="text/javascript">
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach((counter) => {
+        counter.innerText = "0";
+
+        const updateCounter = () => {
+            const target = +counter.getAttribute("data-target");
+            const c = +counter.innerText;
+
+            const increment = target / 200;
+            console.log(increment);
+
+            if (c < target) {
+                counter.innerText = `${Math.ceil(c + increment)}`;
+                setTimeout(updateCounter, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCounter();
+    });
+
+</script>
