@@ -153,6 +153,11 @@
     .mainFooter img{
         width:10vw;
     }
+    .card-text{
+        text-align:center;
+        font-size:1rem;
+        font-weight:bold;
+    }
     @@media screen and (max-width:767px) {
         .leftPart {
             width: 100%;
@@ -389,7 +394,7 @@
 
             if (c < target) {
                 counter.innerText = `${Math.ceil(c + increment)}`;
-                setTimeout(updateCounter, 1);
+                setTimeout(updateCounter, 100);
             } else {
                 counter.innerText = target;
             }
