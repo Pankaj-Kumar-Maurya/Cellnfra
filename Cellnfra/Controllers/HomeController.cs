@@ -35,6 +35,9 @@ namespace Cellnfra.Controllers
         {
             return View();
         }
-
+        public IActionResult EWasteManagement()
+        {
+            return View();
+        }
     }
 }
