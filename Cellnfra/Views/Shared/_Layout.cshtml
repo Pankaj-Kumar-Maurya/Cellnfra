@@ -30,6 +30,16 @@
             .mainFooter img {
                 width: 10vw;
             }
+
+            .mainFooter h6 a {
+                text-decoration: none;
+                color: inherit; /* Inherit the color from the parent element */
+            }
+
+                .mainFooter h6 a:hover {
+                    text-decoration: underline;
+                    cursor:pointer;
+                }
     </style>
 </head>
 <body>
@@ -106,33 +116,29 @@
         </div>
         <div>
             <h3>Markets</h3>
-            <h6> Telecom</h6>
-            <h6> Optical Networks</h6>
-            <h6> Industrial Electronics</h6>
-            <h6> CPE Data Networks</h6>
+            <h6><a href="/Home/Telecom">Telecom</a></h6>
+            <h6><a href="/">Optical Networks</a></h6>
+            <h6><a href="/">Industrial Electronics</a></h6>
+            <h6><a href="/">CPE Data Networks</a></h6>
         </div>
         <div>
             <h4>About Company</h4>
-            <h6>
-                About Company
-            </h6>
-            <h6> Contact Us</h6>
-            <h6> Privacy policy</h6>
-            <h6>  Mission & Vision</h6>
-            <h6>  Terms & Conditions</h6>
+            <h6><a href="/Home/WhyUs">About Company</a></h6>
+            <h6><a href="/Home/Contact">Contact Us</a></h6>
+            <h6><a href="/">Privacy policy</a></h6>
+            <h6><a href="/">Mission & Vision</a></h6>
+            <h6><a href="/">Terms & Conditions</a></h6>
         </div>
         <div>
             <h4>Life Cycles Services</h4>
-            <h6>
-                Electronics Repairs
-            </h6>
-            <h6>  Assembly & Retrofitting</h6>
-            <h6> Refurbished Electronics</h6>
-            <h6> Reverse logistics and supply chain</h6>
-            <h6>Bespoke Solutions</h6>
-
+            <h6><a href="/Home/ElectronicsRepairs">Electronics Repairs</a></h6>
+            <h6><a href="/">Assembly & Retrofitting</a></h6>
+            <h6><a href="/">Refurbished Electronics</a></h6>
+            <h6><a href="/">Reverse logistics and supply chain</a></h6>
+            <h6><a href="/">Bespoke Solutions</a></h6>
         </div>
     </div>
+
     <footer style="text-align:center;" class="border-top footer text-dark">
         <div class="container">
             &copy; 2025 - Cellnfra - All Rights Reserved. @* <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
